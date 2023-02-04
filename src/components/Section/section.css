@@ -14,23 +14,21 @@ z-index: 3;
 height: 1.5rem;
 }
 
-.title::after {
-  content: " ";
+.parallelogram{
   position: absolute;
   display: block;
-  width: 100%;
+  width: 120px;
   height: 100%;
   top: 0;
   left: 0;
   z-index: -1;
-background: rgb(180,181,200);
-/* background: linear-gradient(0deg, rgba(180,181,200,1) 0%, rgba(244,247,245,1) 53%, rgba(255,255,255,1) 100%); */
--moz-transform: skew(30deg, 0deg);
--webkit-transform: skew(30deg, 0deg);
--o-transform: skew(30deg, 0deg);
--ms-transform: skew(30deg, 0deg);
-transform: skew(30deg, 0deg);
-margin-left: 10%;
+  background: rgb(180,181,200);
+  -moz-transform: skew(30deg, 0deg);
+  -webkit-transform: skew(30deg, 0deg);
+  -o-transform: skew(30deg, 0deg);
+  -ms-transform: skew(30deg, 0deg);
+  transform: skew(30deg, 0deg);
+  margin-left: 30%;
 }
 
 .titleText{
