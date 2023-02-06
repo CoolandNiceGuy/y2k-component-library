@@ -2,42 +2,63 @@
 display: block;
 }
 
-.title {
+.sectionTitle {
   position: relative;
   width: 120px;
   padding: 10px 20px 10px 10px;
   position: relative;
   color: black;
-background: rgb(180,181,200);
+/* background: rgb(180,181,200); */
 /* background: linear-gradient(0deg, rgba(180,181,200,1) 0%, rgba(244,247,245,1) 53%, rgba(255,255,255,1) 100%); */
 z-index: 3;
 height: 1.5rem;
+border-top-left-radius: 10px;
+
+background-image: linear-gradient(rgba(180,181,200,1), rgba(209,210,221,1));
 }
 
 .parallelogram{
   position: absolute;
   display: block;
-  width: 120px;
+  width: 220px;
   height: 100%;
   top: 0;
   left: 0;
   z-index: -1;
-  background: rgb(180,181,200);
   -moz-transform: skew(30deg, 0deg);
   -webkit-transform: skew(30deg, 0deg);
   -o-transform: skew(30deg, 0deg);
   -ms-transform: skew(30deg, 0deg);
   transform: skew(30deg, 0deg);
   margin-left: 30%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  background-image: linear-gradient(rgba(180,181,200,1), rgba(209,210,221,1));
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-.titleText{
+.sectionTitleText{
   margin: 0;
   font-size: 2rem;
   margin-top: -.25rem;
 }
 
-.content{
+.sectionContent{
   border: solid #b4b5c8 5px;
   padding: .25rem;
+  border-top: solid rgb(180,181,200) 15px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+
+  border-image: linear-gradient(rgba(209,210,221,1), rgba(225,225,233,1)) 10;
+}
+
+@media only screen and (max-width: 600px){
+  .parallelogram{
+    width: 100%;
+  }
 }

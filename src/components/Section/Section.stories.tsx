@@ -14,10 +14,16 @@ export default {
 
 const Template: ComponentStory<typeof Section> = (args) => <Section {...args} />;
 
-export const Example = Template.bind({});
-Example.args = {
+export const Default = Template.bind({});
+Default.args = {
   title: 'Title',
   children: <h1>Put content here</h1>,
-  mainColor: '#b4b5c8',
-  textColor: 'black',
+}
+
+export const Red = Template.bind({});
+Red.args = {
+  title: 'Title',
+  children: <h1>Put content here</h1>,
+  mainColor: '#FF0000',
+  textColor: 'white',
 }

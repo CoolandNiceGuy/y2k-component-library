@@ -17,7 +17,7 @@ interface SectionProps {
   /**
    * Child components to render inside of section
    */
-  children?: React.ReactNode,
+  children: React.ReactNode,
 }
 
 /**
@@ -26,11 +26,11 @@ interface SectionProps {
 function Section({title, mainColor, textColor, children}: SectionProps) {
   return (
     <div className="section">
-      <div className="title" style={{background: mainColor, color: textColor}}>
-        <p className="titleText">{title}</p>
+      <div className="sectionTitle" style={{background: mainColor, color: textColor}}>
+        <p className="sectionTitleText">{title}</p>
         <div className="parallelogram" style={{background: mainColor}}/>
       </div>
-      <div className="content" style={{border: `solid ${mainColor} 5px`, color: textColor}}>
+      <div className="sectionContent" style={{border: `solid ${mainColor} 5px`, color: textColor}}>
         {children}
       </div>
     </div>
