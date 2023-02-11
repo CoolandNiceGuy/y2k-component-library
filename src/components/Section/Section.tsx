@@ -1,5 +1,6 @@
 import React from 'react'
 import './section.css'
+import { hexToRGB, createGradientColor } from '../../helpers'
 
 interface SectionProps {
   /**
@@ -9,7 +10,7 @@ interface SectionProps {
   /**
    * Color used for label background and content border
    */
-  mainColor?: string,
+  mainColor: string,
   /**
    * Color used for all text in section
    */
@@ -23,14 +24,20 @@ interface SectionProps {
 /**
  * UI Component used to house closely-related content
  */
-function Section({title, mainColor, textColor, children}: SectionProps) {
+function Section({title, mainColor = "#b4b5c8", textColor, children}: SectionProps) {
+
+  const color1 = hexToRGB(mainColor, 1);
+  const color2 = createGradientColor(mainColor);
+
+  const linearGradient = "linear-gradient(" + color1 + ", " + color2 + ")"
+
   return (
     <div className="section">
-      <div className="sectionTitle" style={{background: mainColor, color: textColor}}>
+      <div className="sectionTitle" style={{background: linearGradient, color: textColor}}>
         <p className="sectionTitleText">{title}</p>
-        <div className="parallelogram" style={{background: mainColor}}/>
+        <div className="parallelogram" style={{background: linearGradient}}/>
       </div>
-      <div className="sectionContent" style={{border: `solid ${mainColor} 5px`, color: textColor}}>
+      <div className="sectionContent" style={{border: `solid ${color2} 5px`, color: textColor, borderTop: `solid ${color2} 15px`}}>
         {children}
       </div>
     </div>

@@ -1,15 +1,11 @@
 import React from 'react';
 import './button.css';
 
-interface ButtonProps {
-  /**
-   * Is this the principal call to action on the page?
-   */
-  primary?: boolean;
+export interface y2kButtonProps {
   /**
    * What background color to use
    */
-  backgroundColor?: string;
+  color: 'blue' | 'red' | 'green'
   /**
    * How large should the button be?
    */
@@ -28,18 +24,16 @@ interface ButtonProps {
  * Primary UI component for user interaction
  */
 export const Button = ({
-  primary = false,
   size = 'medium',
-  backgroundColor,
+  color,
   label,
   ...props
-}: ButtonProps) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+}: y2kButtonProps) => {
+  const mode = 'y2k-button-' + color
   return (
     <button
       type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
-      style={{ backgroundColor }}
+      className={['y2k-button', `y2k-button--${size}`, mode].join(' ')}
       {...props}
     >
       {label}

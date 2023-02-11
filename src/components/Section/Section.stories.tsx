@@ -24,6 +24,6 @@ export const Red = Template.bind({});
 Red.args = {
   title: 'Title',
   children: <h1>Put content here</h1>,
-  mainColor: '#FF0000',
+  mainColor: '#af4343',
   textColor: 'white',
 }

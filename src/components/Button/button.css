@@ -1,30 +1,47 @@
-.storybook-button {
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+.y2k-button {
   font-weight: 700;
-  border: 0;
+  border: solid 3px silver;
   border-radius: 3em;
   cursor: pointer;
   display: inline-block;
   line-height: 1;
-}
-.storybook-button--primary {
   color: white;
-  background-color: #1ea7fd;
 }
-.storybook-button--secondary {
-  color: #333;
-  background-color: transparent;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+
+.y2k-button-blue {
+  background: linear-gradient(rgba(122, 188, 238, .3),rgba(11, 75, 202, .7), rgba(122, 188, 238, .3));
 }
-.storybook-button--small {
+
+.y2k-button-blue:hover {
+  background: linear-gradient(rgba(122, 188, 238, .5),rgba(11, 75, 202, .7), rgba(122, 188, 238, .5));
+}
+
+.y2k-button-red{
+  background: linear-gradient(rgba(255,0,0,.3),rgba(255,0,0,.7), rgba(255,0,0,.3))
+}
+
+.y2k-button-red:hover{
+  background: linear-gradient(rgba(255,0,0,.5),rgba(255,0,0,.7), rgba(255,0,0,.5))
+}
+
+.y2k-button-green{
+background: linear-gradient(rgba(0,255,0,.3),rgba(0,255,0,.7), rgba(0,255,0,.3))
+}
+
+.y2k-button-green:hover{
+  background: linear-gradient(rgba(0,255,0,.5),rgba(0,255,0,.7), rgba(0,255,0,.5))
+  }
+
+.y2k-button--small {
   font-size: 12px;
   padding: 10px 16px;
 }
-.storybook-button--medium {
+.y2k-button--medium {
   font-size: 14px;
   padding: 11px 20px;
 }
-.storybook-button--large {
+
+.y2k-button--large {
   font-size: 16px;
   padding: 12px 24px;
 }

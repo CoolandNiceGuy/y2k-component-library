@@ -8,7 +8,9 @@ export default {
   component: Snippet,
   argTypes: {
     color: {control: 'color'},
-    hasBackground: {control: 'radio', options: [true, false]}
+
+    // only offer if color is selected
+    hasBackground: {control: 'radio', options: [true, false], if:{arg: 'color', exists: true}}
   },
 } as ComponentMeta<typeof Snippet>;
 

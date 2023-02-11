@@ -8,13 +8,11 @@ display: block;
   padding: 10px 20px 10px 10px;
   position: relative;
   color: black;
-/* background: rgb(180,181,200); */
-/* background: linear-gradient(0deg, rgba(180,181,200,1) 0%, rgba(244,247,245,1) 53%, rgba(255,255,255,1) 100%); */
-z-index: 3;
-height: 1.5rem;
-border-top-left-radius: 10px;
+  z-index: 3;
+  height: 1.5rem;
+  border-top-left-radius: 10px;
 
-background-image: linear-gradient(rgba(180,181,200,1), rgba(209,210,221,1));
+  background: linear-gradient(rgba(180,181,200,1), rgba(209,210,221,1));
 }
 
 .parallelogram{
@@ -34,7 +32,7 @@ background-image: linear-gradient(rgba(180,181,200,1), rgba(209,210,221,1));
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 
-  background-image: linear-gradient(rgba(180,181,200,1), rgba(209,210,221,1));
+  background: linear-gradient(rgba(180,181,200,1), rgba(209,210,221,1));
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -47,14 +45,13 @@ background-image: linear-gradient(rgba(180,181,200,1), rgba(209,210,221,1));
 }
 
 .sectionContent{
-  border: solid #b4b5c8 5px;
+  box-shadow: 5px 5px 6px -2px #000000;
+  border: solid rgb(209,210,221) 5px;
   padding: .25rem;
-  border-top: solid rgb(180,181,200) 15px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
-
-  border-image: linear-gradient(rgba(209,210,221,1), rgba(225,225,233,1)) 10;
+  border-top: solid rgb(209,210,221) 15px;
 }
 
 @media only screen and (max-width: 600px){

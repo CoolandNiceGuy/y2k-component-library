@@ -1,0 +1,12 @@
+.navBar{
+	width: 220px; /*dependent on orientation correct for default*/
+	height: 100vh; /*dependent on orientation correct for default*/
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.navTitle{
+  color: white;
+  text-shadow: 0px 8px 9px black;
+}
