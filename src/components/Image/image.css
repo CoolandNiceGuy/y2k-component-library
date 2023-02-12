@@ -1,8 +1,0 @@
-.imageWrapper{
-  filter: drop-shadow(0px 9px 5px #000);
-}
-
-.y2kImage{
-  clip-path: polygon(15% 0, 100% 0, 85% 92%, 38% 92%, 33% 100%, 0 100%);
-  max-width: 500px;
-}
