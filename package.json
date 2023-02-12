@@ -9,8 +9,7 @@
     "storybook": "export NODE_OPTIONS=--openssl-legacy-provider; start-storybook -p 6006",
     "build-storybook": "build-storybook -o docs-build",
     "rollup": "rollup -c",
-    "release": "npm run rollup && npx changeset publish",
-    "build-static-webapp":"expo build:web"
+    "release": "npm run rollup && npx changeset publish"
   },
   "files": [
     "lib"
