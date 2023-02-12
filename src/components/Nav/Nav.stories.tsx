@@ -25,7 +25,7 @@ Vertical.args = {
 
 export const Horizontal = Template.bind({});
 Horizontal.args = {
-  color: 'green',
+  color: 'blue',
   direction: 'horizontal',
   buttons: [{linkDestination: '', icon: 'tiktok'},{linkDestination: '', icon: 'house'},{linkDestination: '', icon: 'gears'}]
 }
