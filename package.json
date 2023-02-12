@@ -1,0 +1,51 @@
+{
+  "name": "y2k-component-library",
+  "version": "1.0.0",
+  "description": "React component library inspired by early-2000s web design trends/patterns",
+  "main": "lib/index.js",
+  "module": "lib/index.esm.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "export NODE_OPTIONS=--openssl-legacy-provider; start-storybook -p 6006",
+    "build-storybook": "build-storybook -o docs-build",
+    "rollup": "rollup -c",
+    "release": "npm run rollup && npx changeset publish",
+    "build-static-webapp":"expo build:web"
+  },
+  "files": [
+    "lib"
+  ],
+  "author": "Landon Borges",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@storybook/addon-actions": "^6.5.15",
+    "@storybook/addon-essentials": "^6.4.22",
+    "@storybook/addon-interactions": "^6.5.15",
+    "@storybook/addon-links": "^6.5.15",
+    "@storybook/builder-webpack4": "^6.5.15",
+    "@storybook/manager-webpack4": "^6.5.15",
+    "@storybook/react": "^6.1.21",
+    "@storybook/testing-library": "^0.0.13",
+    "@types/react": "^18.0.27",
+    "babel-loader": "^8.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@changesets/cli": "^2.26.0",
+    "@fortawesome/fontawesome-svg-core": "^6.3.0",
+    "@fortawesome/free-brands-svg-icons": "^6.3.0",
+    "@fortawesome/free-solid-svg-icons": "^6.3.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "react": "^18.2.0",
+    "rollup": "^3.15.0",
+    "rollup-plugin-cleaner": "^1.0.0",
+    "rollup-plugin-import-css": "^3.1.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-typescript2": "^0.34.1"
+  }
+}
