@@ -1,0 +1,101 @@
+.snippet{
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  max-width: 500px;
+  /* border: solid black 1px; */
+}
+
+.snippetHeader{
+  background-color: rebeccapurple;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  height: 2rem;
+  padding: .75rem;
+}
+
+.snippetTitle{
+  margin: 0;
+  margin-top: .75rem;
+  color: white;
+}
+
+.snippetContent{
+  display: flex;
+  flex-direction: row;
+  border: solid rebeccapurple 3px;
+  border-top: 0;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  justify-content: space-evenly;
+}
+
+.snippetImage{
+  width: 30%;
+  padding: 1rem;
+  object-fit: contain;
+}
+
+.snippetText{
+  width: 45%;
+  /* margin-left: 3rem;
+  margin-right: 3rem; */
+}
+
+.snippetText > h2{
+  margin-bottom: 0;
+  font-family: sans-serif;
+  color: navy;
+}
+
+.snippetText > p{
+  margin-top: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+.snippetText > a > button{
+  box-shadow: 2px 2px 0px -1px rgb(0 0 0 / 53%);
+  color: navy;
+  font-size: 18px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  background-color: transparent;
+  border: solid black 1px;
+}
+
+.snippetText > a > button::first-letter{
+  color: red;
+}
+
+/* media breakpoints */
+@media only screen and (max-width: 600px) {
+  .snippetContent{
+    flex-direction: column;
+  }
+  .snippetText{
+    width: 90%;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    align-self: center;
+  }
+
+  .snippetText > h2{
+    margin: 0;
+  }
+
+  .snippetImage{
+    width: 50% !important;
+    align-self: center;
+  }
+
+  .snippetText > a > button{
+    margin-bottom: 1rem;
+  }
+}
