@@ -20,7 +20,7 @@ export const Vertical = Template.bind({});
 Vertical.args = {
   color: 'red',
   direction: 'vertical',
-  buttons: [{linkDestination: '', icon: 'bars'},{linkDestination: '', icon: 'terminal'},{linkDestination: '', icon: 'twitch'}]
+  buttons: [{linkDestination: '', icon: 'bars'},{linkDestination: '', icon: 'facebook'},{linkDestination: '', icon: 'twitch'}]
 }
 
 export const Horizontal = Template.bind({});
